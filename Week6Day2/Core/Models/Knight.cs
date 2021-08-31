@@ -9,7 +9,8 @@ namespace Week6Day2.Core.Models
     public class Knight
     {
         public int Id { get; set; }
-        public string Description { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
 
         public List<Weapon> weapons { get; set; }
     }
