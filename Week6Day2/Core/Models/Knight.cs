@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Week6Day2.Core.Models
 {
-    class Knight
+    public class Knight
     {
         public int Id { get; set; }
         public string Description { get; set; }
