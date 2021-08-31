@@ -12,6 +12,13 @@ namespace Week6Day2.Core.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public List<Weapon> weapons { get; set; }
+        //Relazione 1 a molti
+        public List<Weapon> Weapons = new List<Weapon>();
+
+        //Relazione molti a molti con la battaglia
+        public List<Battle> Battles { get; set; } = new List<Battle>();
+
+        //Relazione 1 a 1
+        public Horse Horse { get; set; }
     }
 }
